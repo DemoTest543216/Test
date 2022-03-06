@@ -23,7 +23,11 @@ public class CartEntity {
 	private Integer userId;
 	private String userName;
 	private String userName2;
+
 	private String userName3;
+
+	private String userName4;
+
 	
 	@OneToMany(targetEntity = CartDetailEntity.class, cascade = CascadeType.ALL, orphanRemoval = true)
 	@JoinColumn(name = "cartid_fk", referencedColumnName = "cartId")
