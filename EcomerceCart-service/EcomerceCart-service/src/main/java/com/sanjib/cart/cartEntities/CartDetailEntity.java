@@ -25,4 +25,5 @@ public class CartDetailEntity {
     private String productName;
     private Integer quantity;
     private String cartName;
+    private String address;
 }
