@@ -21,8 +21,6 @@ public class CartEntity {
 	@GeneratedValue
 	private Integer cartId;
 	private Integer userId;
-	private String cartName;
-	private Integer cartSize;
 
 	
 	@OneToMany(targetEntity = CartDetailEntity.class, cascade = CascadeType.ALL, orphanRemoval = true)
